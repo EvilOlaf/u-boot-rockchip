@@ -8,6 +8,9 @@
 
 &pcie3x2 {
 	pinctrl-0 = <&pcie3x2_reset_h>;
+//	u-boot,dm-pre-reloc;
+	vpcie3v3-supply = <&vcc3v3_pcie>;
+	status = "okay";
 };
 
 &pinctrl {
